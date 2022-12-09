@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/cupcake.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Oswald:wght@300;400;500;700&family=Outfit:wght@600&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/script.js" defer></script>
+    <title>Baking Is Therapy | Find the best and easiest baking recipes </title>
+</head>
+<body>
+    <header>
+        <a href="#home"><img src="/src/cupcake.png" width="50px"></a>
+        <nav>
+            <ul class="nav-bar">
+                <li> <a href="#about" class="about">About Us</a></li>
+                <li> <a href="#recipes" class="recipes"> All Recipes </a></li>
+                <li> <a href="#contact" class="contact">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+         <img src="/src/baking-home.jpg" alt="baking" class="baking_home">
+         <div class="home-content"><h1 class="welcome"> Welcome to 'Baking Is Therapy' Blog</h1>
+                <p> Find the best and easy to follow baking recipes </p>
+         </div>  
+        </section>
+        <section id="about">   
+            <div class="about-content"> <img src="/src/person baking.jpg" alt="person baking" class="baking_about" width="600px">
+                <div id="about-info"><h1 class="about-info"> About Us </h1> <p class="about-text"> One of my favorite activities to relieve stress is baking hence the name of this blog. It is proven scientifcly that a simple activity such as baking can make a huge difference when it comes to relieving stress and also helps to unleash creativity.   
+                    This blog is dedicated to sharing my favorite baking recipes.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section id="recipes">
+            <h1> Recipes</h1>
+            <div class="carousel">
+                <div class="slide-number" id="slide-number"></div>
+                <div class="recipe-content"><a href="#"><img src="/src/cookies.jpg" alt="" class="recipe_img"> <div><h2> Cookies </h2> </a> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p> </div></div> 
+                <div class="recipe-content"><a href="#"><img src="/src/brownie.jpg" alt="" class="recipe_img"> <div><h2>Brownies</h2></a> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div> </div>
+                <div class="recipe-content"><a href="#"><img src="/src/crepes.jpg" alt="" class="recipe_img"> <div><h2>Crepes</h2></a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div>
+                <div class="recipe-content"><a href="#"><img src="/src/muffins.jpg" alt="" class="recipe_img"> <div> <h2> Muffins</h2></a> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div>
+                <div class="recipe-content"> <a href="#"><img src="/src/croissant.jpg" alt="" class="recipe_img"> <div><h2>Croissant</h2></a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div>
+                <div class="recipe-content"> <a href="#"><img src="/src/Cake.jpg" alt="" class="recipe_img"> <div><h2>Cake</h2></a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div> 
+                <div class="recipe-content"> <a href="#"><img src="/src/cinamon roll.jpg" alt="" class="recipe_img"> <div><h2>Cinamon role</h2></a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div>
+                <div class="recipe-content"> <a href="#"><img src="/src/pancakes.jpg" alt="" class="recipe_img"> <div><h2>Pancakes</h2></a><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur exercitationem iusto enim. Ducimus sit officia aspernatur quidem earum dicta asperiores ut nisi quae autem eum recusandae, corporis harum sed excepturi</p></div></div>    
+            </div>  
+            <div class="carousel-btn">
+                <span><button id="previous" class="previous"> <i class="fa-solid fa-arrow-left"></i> </button></span>
+                <span><button id="next" class="next"> <i class="fa-solid fa-arrow-right"></i> </button></span>       
+            </div>
+        </section>
+        <section id="contact">
+            <h1> Contact Us by filling this form:</h1>
+            <div class="form-content">
+                <img src="/src/brooke-lark-V4MBq8kue3U-unsplash.jpg" alt="">
+                <form name="contactForm" onsubmit= validate(event)>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+                <label for="email"> E-mail Adress</label>
+                <input type="email" id="mail" name="mail">
+                <label for="message">Your message:</label>
+                <textarea id="message" name="message" rows="5" cols="33">  </textarea>
+                <button class="submit" id="submit"> Submit</button>
+              </form></div>
+            
+
+        </section>
+    </main>
+    <footer> 
+        <div class="site"> 
+            Follow us on social media:
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> </a> 
+            <a href="https://www.linkedin.com/in/zahia-hamaz-562919116/"><i class="fa-brands fa-linkedin"></i> </a> 
+            <a href="https://github.com/Zahia93"><i class="fa-brands fa-github"></i></a> 
+        </div>
+    <p class="attribution"> Website created by Zahia Hamaz</p>
+
+    </footer>
+</html>
