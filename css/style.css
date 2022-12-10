@@ -2,6 +2,9 @@
     box-sizing: border-box;
     font-family: "Oswald";
 }
+html {
+    scroll-behavior: smooth;
+}
 /* styling header*/
 header {
     height: 100px;
@@ -76,7 +79,7 @@ li {
 
 /*styling about section*/
 #about {
-    height: fit-content;
+    height: 100vh;
     margin-top: 100px;
     background-color: #f7f3ef ;
     padding: 50px;
