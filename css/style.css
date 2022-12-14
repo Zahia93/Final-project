@@ -14,6 +14,7 @@ header {
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    left: 0;
     top: 0;
     z-index: 4;
     background-color: white;
@@ -37,6 +38,9 @@ li {
 .recipes:hover, .about:hover, .contact:hover {
     color: #568EA3;
 }
+.mobile-nav-toggle {
+    display: none;
+}
 
 /*styling home section*/
 @keyframes slidein {
@@ -58,18 +62,18 @@ li {
     box-shadow: 0px, 20px 10px #568EA3;
 }
 .baking_home {
-    width: 600px;
+    width: 50%;
 }
  
 .home-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 200px;
+    margin-right: 100px;
     text-align: center;
 }
 .welcome {
-    font-size: 80px;
+    font-size: 5em;
     color: #568EA3;
     font-weight: 400;
 }
@@ -79,11 +83,9 @@ li {
 
 /*styling about section*/
 #about {
-    height: 100vh;
     margin-top: 100px;
     background-color: #f7f3ef ;
-    padding: 50px;
-
+    padding: 20px;
 }
 
 .about-info {
@@ -100,16 +102,20 @@ li {
     
 }
 
+.baking-about {
+    max-width: 50%;
+    height: auto;
+}
 .about-text {
     margin-left: 20px;
-    width: 600px;
+    max-width: 100%;
     text-align: center;
     font-weight: 400;
-    font-size: larger;
+    font-size: 25px;
 }
 .recipe_img {
-    width: 450px;
-    height: 450px;
+    max-width: 450px;
+    max-height: 450px;
 
 }
 
@@ -122,7 +128,7 @@ li {
 
 .carousel {
    position: relative;
-   margin-left: 200px;
+   margin-left: 100px;
 }
 
 .recipe-content {
@@ -139,8 +145,9 @@ li {
 }
 .recipe-content > div {
     margin-left: 50px;
-    width: 400px;
+    max-width: 400px;
 }
+
 
 h2 {
     text-decoration: none;
@@ -169,6 +176,7 @@ a {
     color: #fff;
     font-size: 20px;
     width: 80px;
+    z-index: 10;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -250,4 +258,109 @@ footer {
 .attribution {
     font-size: 14px;
     text-align: center;
+}
+@media screen and (min-width:641px) and (max-width: 1007px) {
+
+.welcome {
+    font-size: 3rem;
+}
+
+}
+@media screen and (max-width:640px) {
+    header {
+        justify-content: flex-end;
+        position: relative;
+        z-index: 0;
+        background-color: transparent;
+    }
+    .nav-bar {
+        flex-direction: column;
+    }
+    li {
+        margin-top: 100px;
+        padding: 10px;
+    }
+    nav  {
+        height: 100%;
+        margin-top: 0px;
+        width: 300px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 4;
+        background-color:rgba(210, 215, 211, 0.5);
+        box-shadow: 2px 0px 0px 0px grey;
+        transform: translateX(-100%);
+        transition: ease-in 0.5s;
+        
+    }
+    nav[data-visible="true"] {
+        transform: translateX(0%);
+        transition: ease-out 0.5s;
+    }
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+ /*styling the mobile toggle icon*/
+    .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    }
+    .fa-solid {
+    font-size: 50px;
+    }
+    
+    .welcome {
+        font-size: 3em;
+        color: #568EA3;
+        font-weight: 400;
+        width:320px;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+    .recipe-content{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+    }
+    .carousel {
+        margin-left: 100px;
+    }
+    .recipe-content > div {
+        margin-left: 0px;
+        width: 800px;
+        font-size: 1em;
+    }
+    .previous, .next {
+        background-color: #568EA3;
+        border-style: none;
+        color: #fff;
+        font-size: 10px;
+        width: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        top: 250px;
+    
+    }
+    #contact {
+        margin-top: 800px;
+        background-color: #f7f3ef; 
+    }
 }

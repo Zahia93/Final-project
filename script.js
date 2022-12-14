@@ -102,3 +102,17 @@ function validate (e) {
 
 
 }
+
+//header button functionality
+var navigation= document.getElementById ("nav-bar")
+var toggle = document.getElementById ("mobile-nav-toggle")
+
+toggle.addEventListener ("click", () => {
+    var visibility = navigation.getAttribute ('data-visible'); 
+   if (visibility === "false") {
+    navigation.setAttribute ('data-visible', true);
+   } else {
+    navigation.setAttribute ('data-visible', false);
+   }
+
+});

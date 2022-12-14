@@ -13,8 +13,9 @@
 </head>
 <body>
     <header>
-        <a href="#home"><img src="/src/cupcake.png" width="50px"></a>
-        <nav>
+        <a href="#home"><img src="/src/cupcake.png" width="50px" class="logo"></a> 
+        <button aria-controls="nav-bar" aria-expanded="true"class="mobile-nav-toggle" id="mobile-nav-toggle"><span class="icon"><i class="fa-solid fa-bars"></i></span></button>
+        <nav data-visible="false" aria-expanded="false" id="nav-bar">
             <ul class="nav-bar">
                 <li> <a href="#about" class="about">About Us</a></li>
                 <li> <a href="#recipes" class="recipes"> All Recipes </a></li>
@@ -30,7 +31,7 @@
          </div>  
         </section>
         <section id="about">   
-            <div class="about-content"> <img src="/src/person baking.jpg" alt="person baking" class="baking_about" width="600px">
+            <div class="about-content"> <img src="/src/person baking.jpg" alt="person baking" class="baking-about">
                 <div id="about-info"><h1 class="about-info"> About Us </h1> <p class="about-text"> One of my favorite activities to relieve stress is baking hence the name of this blog. It is proven scientifcly that a simple activity such as baking can make a huge difference when it comes to relieving stress and also helps to unleash creativity.   
                     This blog is dedicated to sharing my favorite baking recipes.</p>
                 </div>
